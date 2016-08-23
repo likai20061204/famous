@@ -1,0 +1,168 @@
+#orderPage{
+  background-color: #f6f6f6;
+  .eggplant{
+    z-index: 99;
+    .egg{
+      animation: egg 0.2s ;
+      -webkit-animation: egg 0.2s ;
+    }
+  }
+
+  .img_box{
+
+    p{
+      position: absolute;
+      right:0;
+      text-align: right;
+      padding: 3% 3% 0 0;
+    }
+
+    span{
+      display: block;
+    }
+
+    .title{
+      font-size: 15px;
+      color:#999;
+    }
+
+    .price{
+      color:#e8732a;
+      font-size: 13px;
+    }
+  }
+
+  @keyframes egg {
+    from{transform: scale(0.1);}
+    to{transform: scale(1);}
+
+  }
+  @-webkit-keyframes egg {
+    from{-webkit-transform: scale(0.1);}
+    to{-webkit-transform: scale(1);}
+  }
+
+  .mask{
+    background: #131313;
+    opacity: .6 !important;
+    z-index: 9;
+  };
+  .con{
+    >div{
+      clear: both;
+    }
+    .dic{
+      border: 1px solid #e0e0e0;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+
+      .bor{
+        border-bottom: 1px solid #e0e0e0;
+        height: 75px;
+        padding: 0 10px;
+        background: #ffffff;
+        line-height: 75px;
+        box-sizing: border-box;
+
+        &:last-child{
+          border:none;
+        }
+        span{
+          font-size: 15px;
+          color: #666666;
+        }
+      }
+    }
+
+    .side{
+      float: right;
+      img{
+        width: 10px;
+        height: 17px;
+        vertical-align: middle;
+      }
+    }
+
+  }
+  .num{
+    color: #fe6a71;
+    font-size: 15px;
+    vertical-align: middle;
+    line-height: 15px;
+  }
+  .twelve{
+    color: #fe6a71;
+    font-size: 16px;
+    text-align: right;
+    line-height: 75px;
+  }
+
+  .address select{
+    width: 80%;
+    -webkit-appearance: none;
+    border: none;
+    font-size: 15px;
+    color: #666;
+    outline: none;
+    display: block;
+    margin-left: 50px;
+    line-height: 75px;
+    background: none;
+    text-align: center;
+    height: 100%;
+    option{
+      width: 100%;
+    }
+  }
+
+  .btn{
+
+    background: #fe6a71;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    text-align: center;
+    line-height: 42px;
+
+  }
+
+  .remind{
+    border-top:1px dashed #999;
+    color:#999;
+
+    >div{
+      padding: 15px 25px 0;
+    }
+
+    h2{
+      color:#999;
+      font-size: 14px;
+      font-weight: normal;
+
+      i{
+        display: inline-block;
+        margin-right: 5px;
+        width: 13.5px;
+        height: 13.5px;
+        background: url('./images/common/s_remind_ico.png') center center no-repeat;
+        background-size: cover;
+        vertical-align: middle;
+      }
+    }
+
+    p{
+      font-size: 13px;
+      margin-top:8px;
+
+      em{
+        margin-right: 5px;
+        font-style: normal;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+

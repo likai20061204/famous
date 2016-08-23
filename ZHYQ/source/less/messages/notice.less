@@ -1,0 +1,103 @@
+#Notice{
+	overflow: hidden;
+	.notice_box{
+		background-color: #efefef;
+	}
+	.notice_list{
+		background-color: #fff;
+		line-height: 20px;
+		color:#000;
+		transition:.3s;
+
+		>div{
+			background-color: #fff;
+			padding: 0 14px;
+		}
+
+		p{
+			margin: 17px 0 0;
+			width: 85%;
+			font-size: 1.5rem;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+
+		span{
+			color:#bdbdbd;
+			font-size: 1.2rem;
+		}
+
+		.del_ico{
+			display: inline-block;
+			width: 22px;
+			height: 22px;
+			background: url('./images/common/del_ico.png') center center no-repeat;
+			background-size: cover;
+			position: absolute;
+			top:50%;
+			margin-top: -11px;
+		}
+
+
+	}
+}
+
+#NoticeDetail{
+	.notice_bg{
+		background-color: #f6f6f6;
+		div.notice_con{
+			padding: 0 20px;
+			text-indent: 2em;
+	    line-height: 1.8;
+			img{
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+		}
+	}
+	.notice_header{
+		padding-bottom:15px; 
+		border-bottom: 1px dashed #b5b5b5;
+		text-align: center;
+		overflow: hidden;
+		h2{
+			padding: 0 15px;
+			margin: 30px 0 5px;
+			color:#484848;
+			font-size: 15px;
+			font-weight: normal;
+			text-align: center;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow:ellipsis;
+		}
+
+		time{
+			color:#bdbdbd;
+			font-size: 12px;
+		}
+	}
+
+	.notice_con{
+		margin-top: 15px;
+		padding: 0 15px;
+		line-height: 25px;
+		text-indent: 2rem;
+		font-size: 15px;
+	    word-break: break-all;
+	}
+
+	.notice_footer{
+		margin-top: 50px;
+		padding: 0 15px 20px;
+		text-align: right;
+		font-size: 15px;
+		color:#666;
+
+		p{
+			margin-bottom: 10px;
+		}
+	}
+}

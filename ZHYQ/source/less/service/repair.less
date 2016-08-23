@@ -1,0 +1,160 @@
+#Repair{
+	.right_text{
+		input{
+			font-size: 1.3rem;
+		}
+	}
+	.repair_con{
+		background-color: #f3f3f3;
+	}
+
+	.repair_form{
+		background-color: #fff;
+		border-radius: 10px;
+
+		ul{
+			padding: 0 11px;
+		}
+		
+		li{
+			position: relative;
+			height: 60px;
+			border-bottom: 1px solid #dedede;
+			line-height: 60px;
+			box-sizing: border-box;
+			&:last-child{
+				border-bottom: none;
+			}
+		}	
+
+		span{
+			display: inline-block;
+			width: 100px;
+			font-size: 13px;
+			color:#999;
+
+			&:before{
+				content:'';
+				display: inline-block;
+				margin-right: 12px;
+				margin-top: -3px;
+				width: 15px;
+				height: 15px;
+				vertical-align: middle;
+			}
+		}
+		
+		.desc{
+			height: 220px;
+			span:before{
+				background: url('./images/service/desc_ico.png') no-repeat;
+				background-size: cover;
+			}
+			
+		}
+
+		.date{
+			span:before{
+				background: url('./images/service/date_ico.png') no-repeat;
+				background-size: cover;
+			}
+			
+		}
+
+		.tel{
+
+			span:before{
+				background: url('./images/service/tel_ico.png') no-repeat;
+				background-size: cover;
+			}
+			
+		}
+
+		.adds{
+
+			&:after{
+				content:'';
+				margin-top: -4px;
+				width: 7px;
+				height: 13px;
+				background: url('./images/service/arrow_ico.png')no-repeat;
+				background-size: cover;
+			    position: absolute;
+			    right: 5px;
+			    top: 50%;
+
+			}
+
+			
+			span:before{
+				background: url('./images/service/adds_ico.png') no-repeat;
+				background-size: cover;
+			}
+			
+		}
+
+		input{
+			color:#666;
+			font-size: 1.5rem;
+			-webkit-appearance:none; 
+			appearance:none;
+			background: transparent;
+			border:none;
+			font-family: "微软雅黑";
+		}
+
+		.adds_select{
+			select{
+				width: 95%;
+				height: 60px;
+				line-height: 60px;
+				color:#666;
+				font-size: 1.5rem;
+				font-family: "微软雅黑";
+				background: none;
+				outline:none;
+				border:none;
+				resize:none;
+				-webkit-appearance:none; 
+				appearance:none;
+			}
+			
+		}
+
+		.desc_textarea{
+			color:#666;
+			font-size: 15px;
+			font-family: "微软雅黑";
+			line-height: 20px;
+			outline:none;
+			border:none;
+			resize:none;
+		}
+
+
+	}
+
+	.submit_btn{
+		color:#fff;
+		border-radius: 5px;
+
+		input{
+			line-height: 40px;
+			font-size:1.8rem;
+			font-family: "微软雅黑";
+		}
+	}
+
+}
+
+
+.goback2{
+	display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: url("images/common/goback.png") no-repeat center center;
+    background-size: 10px 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

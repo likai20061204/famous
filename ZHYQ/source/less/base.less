@@ -1,0 +1,187 @@
+@font-xs:1.2rem;
+@font-sm:1.4rem;
+@font-md:1.6rem;
+@font-lg:1.8rem;
+@font-xg:2rem;
+
+@font-default:1.5rem;
+.font-def{font-size: @font-default}
+
+*{ 
+// -webkit-user-select:none
+    -webkit-touch-callout:none;
+  //css 动画闪烁 暂时没有使用
+  // -webkit-backface-visibility: hidden;
+  //解决iOS click 闪烁
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  // //iOS滑动惯性
+  -webkit-overflow-scrolling: touch;
+}
+
+.font-xs{font-size: @font-xs;}
+.font-sm{font-size: @font-sm;}
+.font-md{font-size: @font-md;}
+.font-lg{font-size: @font-lg;}
+.font-xg{font-size: @font-xg;}
+.font-2xs{font-size: @font-xs*2;}
+.font-2sm{font-size: @font-sm*2;}
+.font-2md{font-size: @font-md*2;}
+.font-2lg{font-size: @font-lg*2;}
+.font-2xg{font-size: @font-xg*2;}
+
+.text-center{text-align: center;}
+.text-right{text-align: right;}
+.text-left{text-align: left;}
+.text-truncate{word-wrap: normal; text-overflow: ellipsis; white-space: nowrap;overflow: hidden;}
+
+.block{display: block;}
+.in-block{display: inline-block;}
+.flex-box{ display: -moz-box; display: -webkit-box; display: box;}
+.flex1{-moz-box-flex: 1; -webkit-box-flex: 1; box-flex: 1;}
+
+body,html {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+  font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;color:#666;
+  -webkit-user-select: none; 
+  user-select: none; 
+}
+body{font-size: 1.2rem;}
+body,ul,li,h1,h2,h3,h4,h5,h6,p { padding: 0; margin: 0;}
+em,i{font-style: normal;}
+a {
+  text-decoration: none;
+}
+li {list-style: none;}
+input:focus,button:focus,textarea:focus{outline:none;}
+::-webkit-input-placeholder {color: #bbb;font-family: "Microsoft Yahei"} 
+.overflow_auto {overflow-y: auto;-webkit-overflow-scrolling: touch;overflow-x:hidden;}
+.res-img{max-width: 100%;margin:0 auto;display: block;}
+
+//顶部导航样式
+.navbar{
+	line-height: 44px; background-color: #fe6a71;color:#fff;position: relative;
+	.goback{
+		display: inline-block;width:35px;height: 35px;background: url("./images/common/go_back_white.png") no-repeat center center; background-size: 10px 18px;
+		position: absolute;top:5px;left:0;
+	}
+  .goback2{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: url("images/common/go_back_white.png") no-repeat 15px center;
+    background-size: 10px 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .right_text input{
+    font-size: 1.4rem;
+    padding-left: 25px;
+  }
+}
+//按钮
+.fa-button input[type='button']{width:100%;height:100%;background: transparent;border:none;color:#fff;}
+
+.fa-button.bt-active{opacity: .8 !important;}
+
+//遮罩层
+.g-mask{background: rgba(0,0,0,.4);}
+.fa-button.bt-active{opacity: .8 !important;}
+
+// 页面切换动画
+.page_change {
+  transition: transform .3s cubic-bezier(0.52, -0.01, 0.35, 0.84);
+}
+
+// 页面滚动 兼容ios
+.overflow_scoll {
+  overflow-y: auto;
+  -webkit-overflow-scolling: touch;
+}
+.table-view{background-color: #fff;}
+.footer
+{
+  background-color: white;
+  .fa-button
+  {
+    background: url("./images/home/release.png") no-repeat center center;
+    background-color: rgb(251, 160, 89);
+    background-size: 25px 35px;
+  }
+}
+
+.white_backgound{
+  background-color: #fff;
+}
+
+//气泡提示
+.bubble_tips{
+  position: absolute;
+  bottom: 3%;
+  text-align: center;
+  color:#fff;
+  line-height: 50px;
+  span{
+    padding: 0 30px;
+    display: inline-block;
+    background:rgba(0,0,0,0.5);
+    border-radius: 30px;
+    font-size: 1.6rem;
+  }
+
+}
+
+//去掉滚动条
+::-webkit-scrollbar {
+    display: none;
+}
+
+//个人中心icon_item
+.icon_item{
+  color:#666666;
+  line-height: 50px;
+  background-color: #fff;
+
+  > div{
+    padding: 0 10px;
+  }
+
+  .inner_item{
+    display: flex;
+    box-sizing: border-box;
+    height: 100%;
+    border-bottom:1px solid #f1e8e9;
+  }
+
+  img{
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+  }
+
+  span{
+    display: block;
+    flex:1;
+    margin-left: 14px;
+    font-size: 13px;
+  }
+
+  &:after{
+    content: '';
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      margin-top: -15px;
+      width: 30px;
+      height: 30px;
+      background: url('images/common/item_arrow_ico.png') center center no-repeat;
+      background-size: 6px 9px;
+  }
+}
+
+

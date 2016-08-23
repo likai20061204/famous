@@ -1,0 +1,173 @@
+#ShopChoose{
+	background-color:#f6f6f6;
+	.HD{
+		color:#666;
+		font-size: 15px;
+
+		> div{
+			padding: 0 14px;
+		}
+
+		span{
+			display: inline-block;
+			margin-top: -1px;
+			margin-right: 5px;
+			width:2px;
+			height: 14px;
+			background-color: #e8732a;
+			vertical-align: middle;
+		}
+	}
+
+	.shop_item{
+		text-align: center;
+		line-height: 60px;
+		font-size: 16px;
+		color:#666;	
+		background-color: #fff;
+		border:1px solid #f9f9f9;
+	}
+}
+
+#AdApply{
+	
+	background-color: #f6f6f6;
+
+	ul{
+		background-color: #fff;
+	}
+		
+	li{
+		position: relative;
+		padding: 0 20px;
+		height: 60px;
+		border-bottom: 1px solid #dedede;
+		line-height: 60px;
+		box-sizing: border-box;
+		
+		&:before{
+			content:'';
+			display: inline-block;
+			margin-right: 12px;
+			margin-top: -3px;
+			width: 16px;
+			height: 18px;
+			vertical-align: middle;
+
+		}
+
+		&:after{
+			content:'';
+		    position: absolute;
+		    right: 20px;
+		    top: 50%;
+		    margin-top: -3px;
+			width: 7px;
+			height: 13px;
+			vertical-align: middle;
+			background: url('./images/common/r_arrow_ico.png') center center no-repeat;
+			background-size: cover;
+
+		}
+	}	
+
+
+	.area{
+		&:before{
+			background: url('./images/apply/area_ico.png') no-repeat;
+			background-size: cover;
+		}
+		
+	}
+
+	.building{
+		&:before{
+			background: url('./images/apply/building_ico.png') no-repeat;
+			background-size: cover;
+		}
+		
+	}
+
+	.number{
+		&:before{
+			background: url('./images/apply/number_ico.png') no-repeat;
+			background-size: cover;
+		}
+		
+	}
+
+	.type{
+		&:before{
+			background: url('./images/apply/type_ico.png') no-repeat;
+			background-size: cover;
+		}
+		
+	}
+
+	.select_box{
+
+		select{
+			width: 95%;
+			height: 60px;
+			line-height: 60px;
+			color:#666;
+			font-size: 1.5rem;
+			font-family: "微软雅黑";
+			background: none;
+			outline:none;
+			border:none;
+			resize:none;
+			-webkit-appearance:none; 
+			appearance:none;
+		}
+		
+	}
+
+	.submit_btn{
+		color:#fff;
+		border-radius: 5px;
+
+		input{
+			line-height: 40px;
+			font-size:1.8rem;
+			font-family: "微软雅黑";
+		}
+	}
+
+	.remind{
+		border-top:1px dashed #999;
+		color:#999;
+
+		>div{
+		    padding: 20px 25px 0;
+		}
+
+		h2{
+			color:#999;
+			font-size: 14px;
+			font-weight: normal;
+
+			i{
+				display: inline-block;
+				margin-right: 5px;
+				width: 13.5px;
+				height: 13.5px;
+				background: url('./images/common/s_remind_ico.png') center center no-repeat;
+				background-size: cover;
+				vertical-align: middle;
+			}
+		}
+
+		p{
+			font-size: 13px;
+			margin-top:15px;
+
+			em{
+				margin-right: 5px;
+				font-style: normal;
+				font-weight: 700;
+			}
+		}
+	}
+
+}

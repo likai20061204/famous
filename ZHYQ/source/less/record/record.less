@@ -1,0 +1,63 @@
+.status_loop(@num) when(@num <= 5){
+			&.status_@{num} {
+				background: url('./images/record/status_@{num}.png') center center no-repeat;
+				background-size: cover;
+			}
+
+	.status_loop(@num+1);
+
+}
+
+#Record{
+	background-color: #f0f0f0;
+	
+	.con{
+
+		>div{
+			padding: 0 14px;
+		}
+	}
+	
+
+	.record_list{
+		margin-top: 8px;
+		position: relative;
+	}
+
+	.record_status{
+		position: absolute;
+		width: 58px;
+		height: 55px;
+		top:15px;
+		right:17px;
+		background-color: red;
+		border-radius: 100%;
+
+		.status_loop(0);
+	}
+
+	table{
+	    width: 100%;
+	    background-color: #fff;
+	    border-collapse: collapse;
+	    border: 1px solid #e9e9e9;
+	    border-radius: 5px;
+	    overflow: hidden;
+
+		td{
+			font-size: 13px;
+			color:#666;
+			text-align: left;
+			padding: 10px;
+
+			&.title{
+				width: 80px;
+				background-color: #f6f8fe;
+				color:#999;
+				text-align: center;
+			}
+		}
+	}
+
+	
+}

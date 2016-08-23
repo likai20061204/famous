@@ -1,0 +1,11 @@
+{
+     "android": {
+         "release": {
+             "keystore": "./zhyq.p12",
+             "storePassword": "zho!123",
+             "alias": "zhyqAppDev",
+             "password" : "zho!123",
+             "keystoreType": "pkcs12"
+         }
+     }
+ }

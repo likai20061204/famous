@@ -1,0 +1,132 @@
+.theader{
+	background-color: #97CE32;
+	color:#fff;
+
+	.info_box{
+		display:-moz-box;
+	    display:-webkit-box;
+	    display:box;
+
+	    img{
+    	    margin-left: 20px;
+	    	width:64px;
+	    	height: 64px;
+	    	border-radius: 100%;
+	    }
+
+	    p{
+	    	-moz-box-flex:1;
+		    -webkit-box-flex:1;
+		    box-flex:1;
+		    margin-left: 20px;
+	
+			strong{
+				display: block;
+			    margin-top: 5px;
+    			font-size: 25px;
+				font-weight: 100;
+			}
+		    em{
+		    	font-size: 28px;
+			    font-family: num;
+			    position: absolute;
+			    right: 10px;
+			    top: 50%;
+			    margin-top: -14px
+		    }
+	    }
+	}
+}
+
+.home_item{
+	border-top:8px solid #eee;
+
+	> div{
+		padding: 20px 10px 0;
+	    border-bottom: 1px solid #E8E8EA;
+	}
+
+	i{
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		background: url('./images/community/2.png') no-repeat;
+		background-size: cover;
+		vertical-align: middle;
+	}
+
+	.home_num{
+		margin-left: 10px;
+	}
+
+	.home_price{
+		float: right;
+
+		em{
+			display: block;
+			color:#FF670C;
+			font-size: 14px;
+			text-align: right;
+		}
+	}
+
+
+}
+
+.pay_list{
+
+	> div{
+	    line-height: 50px;
+	    border-bottom: 1px solid #eee;
+	    padding: 0 25px 0 40px;
+	    color:#666;
+	}
+
+	span{
+		font-size: 16px;
+	}
+
+	em{
+		float: right;
+		font-size: 15px;
+	}
+}
+
+#Paymentlist{
+	background-color: #F2F2F2;
+
+	.home_name{
+		background: #F2F2F2;
+		line-height: 30px;
+		> div{
+			padding-left: 20px;
+			font-size: 14px;
+		}
+	}
+
+	.f_Btn{
+		> div:first-child{
+			line-height: 60px;
+			text-align: right;
+			padding-right: 140px;
+			color:#FFAD00;
+		}
+		
+		border-top: 10px solid #F2F2F2;
+
+		.check{
+			input{
+				vertical-align: middle;
+				margin-right: 10px;
+			}
+		}
+
+		.pay_btn{
+			margin-top: -5px;
+			border-radius: 5px;
+			input{
+				font-size: 14px;
+			}
+		}
+	}
+}
