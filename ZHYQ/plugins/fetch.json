@@ -46,5 +46,13 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "cordova-plugin-alipay": {
+        "source": {
+            "type": "local",
+            "path": "D:\\ZHYQ2\\ZHYQ\\plugins\\cordova-plugin-alipay"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

@@ -21,6 +21,9 @@
         },
         "cordova-plugin-device": {
             "PACKAGE_NAME": "io.cordova.myappe22380"
+        },
+        "cordova-plugin-alipay": {
+            "PACKAGE_NAME": "io.cordova.myappe22380"
         }
     },
     "dependent_plugins": {
